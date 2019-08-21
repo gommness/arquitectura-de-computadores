@@ -1,0 +1,15 @@
+#!/bin/bash
+
+P=23
+ini=$P
+end=$(expr $P + 1024)
+echo "tamanio tiempoSerie tiempoParalelo SpeedUp" > bestPerformances.dat
+
+for i in $(seq $ini 32 $end)
+do
+	echo "tamaño: $i"
+	time1=$(./code/matrixComputeSerie $i)
+	time2=$(./code/matrixComputePar3 $i 4)
+	speedup=$(echo "scale=4;$time1/$time2" | bc)
+	echo "$i $time1 $time2 $speedup" >> bestPerformances.dat
+done

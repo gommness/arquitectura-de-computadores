@@ -1,0 +1,19 @@
+Inicio: a = 1,	 b = 2,	 c = 3
+	 &a = 0x7ffd29128f04,x	 &b = 0x7ffd29128f08,	 &c = 0x7ffd29128f0c
+
+[Hilo 0]-1: a = 0,	 b = 2,	 c = 3
+[Hilo 0]	 &a = 0x7ffd29128ed8,	 &b = 0x7ffd29128f08,	 &c = 0x7ffd29128ed4
+[Hilo 0]-2: a = 15,	 b = 4,	 c = 3
+[Hilo 2]-1: a = 0,	 b = 2,	 c = 3
+[Hilo 2]	 &a = 0x7f51dd572e58,	 &b = 0x7ffd29128f08,	 &c = 0x7f51dd572e54
+[Hilo 2]-2: a = 21,	 b = 6,	 c = 3
+[Hilo 3]-1: a = 0,	 b = 2,	 c = 3
+[Hilo 3]	 &a = 0x7f51dcd71e58,	 &b = 0x7ffd29128f08,	 &c = 0x7f51dcd71e54
+[Hilo 3]-2: a = 27,	 b = 8,	 c = 3
+[Hilo 1]-1: a = -569106140,	 b = 8,	 c = 3
+[Hilo 1]	 &a = 0x7f51ddd73e58,	 &b = 0x7ffd29128f08,	 &c = 0x7f51ddd73e54
+[Hilo 1]-2: a = -1578480335,	 b = 10,	 c = -1578480365
+
+Fin: a = 1,	 b = 10,	 c = 3
+	 &a = 0x7ffd29128f04,	 &b = 0x7ffd29128f08,	 &c = 0x7ffd29128f0c
+
