@@ -1,0 +1,49 @@
+Autores: Javier Gómez Martínez y Carlos Li Hu
+
+En la carpeta source:
+	-los archivos proporcionados (.c .h makefile)
+
+En la carpeta ejercicio1:
+	-ejercicio1.dat
+	-ejercicio1.jpeg
+	-ejercicio1.sh
+	-gnuplot.gp
+
+En la carpeta ejercicio2:
+	-createDataFiles.sh	un script para generar los datos a partir de
+				los resultados de callgrind
+	-ejercicio2.sh
+	-callgrind/		directorio donde guardamos los resultados de
+				callgrind
+	-dataFiles/
+		-1.dat		se corresponden a los ficheros con los datos
+		-2.dat		sobre las simulaciones de cachés de tamaño
+		-4.dat		16, 32 64 y 128 KB respectivamente
+		-8.dat
+		-graficaFallosEscritura.jpeg
+		-graficaFallosLectura.jpeg
+		-makeGraphs	un script que a partir de los .dat crea las
+				gráficas
+		-readMiss.gp
+		-writeMiss.gp
+
+En la carpeta ejercicio3:
+		-ejercicio3.sh
+		-matrixCompute.c
+		-matrixCompute	El ejecutable del .c (se recompila cada vez
+				que se ejecuta el ejercicio3.sh)
+		-callgrind/	directorio donde guardamos los resultados de
+				callgrind
+		-dataFiles/
+			-fallosCache.gp
+			-tiempos.gp
+			-matrix.dat
+			-fallosCacheESCRITURA.jpeg
+			-fallosCache.jpeg
+			-tiempos.jpeg
+
+NOTA:
+todos los archivos *.gp son scripts de gnuplot para generar las gráficas
+correspondientes
+todos los .dat son ficheros de datos a partir de los cuales se generan
+las gráficas de los ejercicios

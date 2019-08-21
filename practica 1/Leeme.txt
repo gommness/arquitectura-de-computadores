@@ -1,0 +1,5 @@
+Javier Gómez Martínez
+Carlos Li Hu
+
+
+Hemos añadido los esquemas de cada procesador, para facilitar el seguimiento de las señales

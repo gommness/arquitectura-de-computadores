@@ -1,0 +1,36 @@
+Hecho por: Carlos Li Hu y Javier Gómez Martínez
+
+Hemos distribuido todos los archivos en carpetas de la siguiente manera:
+
+en la carpeta principal
+	-Makefile
+
+source/
+	en esta carpeta guardamos los .c .h proporcionados (así como sus respectivos ejecutables)
+
+ejercicio0/
+	-ejercicio0.output		es el resultado de ejecutar "cat /proc/cpuinfo"
+
+ejercicio1/
+	-omp2.output			es el resultado de ejecutar omp2
+
+ejercicio2/
+	-ejercicio2.sh			es el script que se encarga de generar los ficheros con datos requeridos para el ejercicio 2
+	-ejercicio2outputs/		en esta carpeta se guardan los resultados de las ejecuciones para analizarlos posteriormente
+		-*.output 		son ficheros con resultados a representar en gráficas
+		-speedups.sh		es un script que se encarga de calcular las aceleraciones de los distintos .output (obviando el speedups.output)
+					y volcar los resultados al fichero speedups.output
+		-ejercicio2.gp		es un script de gnuplot que se encarga de generar las gráficas requeridas en el ejercicio
+
+ejercicio3/
+	-ejercicio3.sh			es el script que se encarga de hacer todas las ejecuciones necesarias para rellenar la tabla de tiempos 
+					del ejercicio3
+	-ejercicio3.speedups		es el script que, a partir de la tabla de tiempos, se encarga de calcular los speedups con respecto a la version
+					en serie
+	-simulateBest.sh		es el scritp que se encarga de realizar las ejecuciones de las mejores versiones
+	-ejercicio3.output		es la tabla que contiene los tiempos de ejecución
+	-ejercicio3speedups.output	es la tabla que contiene las aceleraciones de las distintas versiones con respecto de la version en serie
+	-bestPerformances.dat		es el resultado de la simulación de la mejor versión en comparación con la versión en serie. Los datos que almacena
+					con: el tamaño de la matriz de la ejecución, el tiempo de la versión en paralelo, el tiempo de la versión en serie
+					y el speedup de la versión en paralelo sobre la versión en serie
+	-code/				Esta carpeta contiene los .c con las distintas versiones y sus respectivos ejecutables

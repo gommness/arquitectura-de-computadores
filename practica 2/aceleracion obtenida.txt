@@ -1,0 +1,15 @@
+Para el cálculo de tiempos de ejecución, no hemos tenido en cuenta los ciclos
+cuyo flanco de subida del reloj sucede mientras que el reset está a 1
+
+ejercicio1: 79 instrucciones
+termina: 4875 ns
+empieza: 125 ns
+tiempo de ejecucion: 4750 ns
+
+ejercicio2: 79 instrucciones
+termina: 4275 ns
+empieza: 125 ns
+tiempo de ejecucion 4150 ns
+
+Aceleracion: 1,144578313253012
+El procesador del ejercicio2 es 1,144578313253012 veces más rápido que el del ejercicio1.
